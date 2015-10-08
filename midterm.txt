@@ -1,6 +1,3 @@
-# Cryptography
-CS5153 Network Security Projects
-
 CS5153 Midterm 
 Oct 22
 
@@ -19,4 +16,3 @@ Oct 22
 http://docs.python.org/library/sha.html
 
 4. Define SHA3_224TRUNk to be the hash function that outputs the first k bits of the SHA3_224 function. Find two different ASCII strings that have the same SHA3_224TRUNk hash value for some k. Both of the strings should start with your OU 4x4 name (in capital letters). Your grade depends on how large k you can manage to reach. You are allowed to use any online implementations of the SHA3_224 hash function, as long as you specify the source.
-
