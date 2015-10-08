@@ -9,8 +9,16 @@ Oct 22
 	(e) Use this example to explain the weakness of a permutation cipher.
 
 2. Create a text file that contains your name and ID number. Then computer the SHA1 hash of the file. (If you use linux, the shell command to compute SHA1 hash is sha1sum.)
+
+	51e021e6d1ab66806f854c749042fbc1f4a10b34  nameID_SHA1.text
+
 	Do you believe that there is another file somewhere on some computer that has the same hash value but has different content? Why?
+
+	It's possible. From wikipedia, SHA1 theoretical attack in 2^61 operations. Considering the number of files on each computer and the number of computers, it's possible to have a collision. 
+
 	Change one digit of the ID number, and recompute the SHA1 hash value.
+
+	c11b4b731cb63bd74da0bd5e0ad1fee942daea76  nameID_SHA1.text
 
 3. Define SHA1TRUN(x) to be the hash function that takes the first two bytes of the SHA1(x). Find one ASCII string that have the SHA1TRUN hash value zero. The string should start with your ID number (in ASCII encoding). There are many implementations of the SHA1 hash function. The documentation for SHA1 in Python can be found at:
 http://docs.python.org/library/sha.html
