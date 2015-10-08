@@ -2,11 +2,52 @@ CS5153 Midterm
 Oct 22
 
 1. Consider a permutation cipher over the alphabet {0,1,2,3,4,6,7,8,9} and of block length 8. Suppose that we learn that the message (0,1,0,2,0,4,9,7) is encrypted to (0,7,0,2,9,1,0,4) and the message (1,3,2,4,3,5,5,5) is encrypted to (2,5,1,4,5,3,3,5).
+
+Plaintext: 
+01020497
+13243555
+12345678
+
+Ciphertext:
+07029104
+25135335
+38147256
+
 	(a) Recover the encrypt key and express it as a matrix.
+		key: 36147852
+		Encryption matrix
+		0 0 1 0 0 0 0 0
+		0 0 0 0 0 1 0 0
+		1 0 0 0 0 0 0 0
+		0 0 0 1 0 0 0 0
+		0 0 0 0 0 0 1 0
+		0 0 0 0 0 0 0 1
+		0 0 0 0 1 0 0 0
+		0 1 0 0 0 0 0 0
+		Decryption Matrix
+		0 0 1 0 0 0 0 0
+		0 0 0 0 0 0 0 1
+		1 0 0 0 0 0 0 0
+		0 0 0 1 0 0 0 0
+		0 0 0 0 0 0 1 0
+		0 1 0 0 0 0 0 0
+		0 0 0 0 1 0 0 0
+		0 0 0 0 0 1 0 0
+
+
 	(b) Decrpyt the ciphertext (1,3,4,8,3,0,5,6)
+		Cipertext:46185330
+
 	(c) Remove the first digit of your Student ID, treat the rest digits as a plaintext and encrypt it.
+	ID - first digit: 13800046
+	cipertext: 86104300
+
 	(d) Remove the first digit of your student ID, treate the rest as ciphertext for this cipher, and decrypt it.
+	ID - first digit: 13800046
+	Decrypted: 80104603
+
 	(e) Use this example to explain the weakness of a permutation cipher.
+		The Permutation Cipher is easily to a known plaintext attack. If attacker knows both plaintext and ciphertext, then it is not difficult to determine the length and then find the key.
 
 2. Create a text file that contains your name and ID number. Then computer the SHA1 hash of the file. (If you use linux, the shell command to compute SHA1 hash is sha1sum.)
 	Do you believe that there is another file somewhere on some computer that has the same hash value but has different content? Why?
