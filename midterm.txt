@@ -64,4 +64,7 @@ Ciphertext:
 3. Define SHA1TRUN(x) to be the hash function that takes the first two bytes of the SHA1(x). Find one ASCII string that have the SHA1TRUN hash value zero. The string should start with your ID number (in ASCII encoding). There are many implementations of the SHA1 hash function. The documentation for SHA1 in Python can be found at:
 http://docs.python.org/library/sha.html
 
+113800046f
+056a04a3debd2f3b23d7ceb38ad196598a08fc28
+
 4. Define SHA3_224TRUNk to be the hash function that outputs the first k bits of the SHA3_224 function. Find two different ASCII strings that have the same SHA3_224TRUNk hash value for some k. Both of the strings should start with your OU 4x4 name (in capital letters). Your grade depends on how large k you can manage to reach. You are allowed to use any online implementations of the SHA3_224 hash function, as long as you specify the source.
