@@ -4,7 +4,7 @@ from string import *
 m = hashlib.sha1()
 in_str = "113800046"
 print(in_str)
-m.update(str(in_str))
+m.update(in_str)
 hex_hash = m.hexdigest()
 print(hex_hash)
 print(hex_hash[0])
@@ -16,8 +16,8 @@ ascii_all = ascii_letters + digits
 found = False
 while(not found):
 	for i in ascii_all:		
-		in_str = in_str + i
-		m.update(str(in_str))
+		m.update(i)
+		in_str = in_str + i;
 		hex_hash = m.hexdigest()
 		#print(in_str)
 		#print(hex_hash)
@@ -27,5 +27,6 @@ while(not found):
 			print(hex_hash)
 			found = True
 			break
+		
 
 
