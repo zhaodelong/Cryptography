@@ -1,11 +1,7 @@
 from string import *
-import hashlib
-import sys
-
-if sys.version_info < (3, 4):
-	import sha3
-
-m = hashlib.sha3_512()
+import sha3 #https://github.com/bjornedstrom/python-sha3
+m = sha3.SHA3224()
+print(m.name, m.digest_size)
 in_str = ""
 print(in_str)
 m.update(in_str)

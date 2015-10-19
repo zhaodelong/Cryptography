@@ -94,10 +94,6 @@ while(not found):
 			print(hex_hash)
 			found = True
 			break
-		
-
-
-
 
 
 
