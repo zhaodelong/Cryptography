@@ -8,7 +8,7 @@ dict = {}
 #ascii_all = "abcd"
 ascii_all = ascii_letters + digits
 found = False
-nchar = 14
+nchar = 11
 for i in range(len(ascii_all)):	
 	if found:
 		break

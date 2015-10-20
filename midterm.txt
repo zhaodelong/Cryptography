@@ -99,3 +99,12 @@ Result: 113800046gSj
 HASH: 00005161a5fec4cc49f980cf250c31dff8a50bcb
 
 4. Define SHA3_224TRUNk to be the hash function that outputs the first k bits of the SHA3_224 function. Find two different ASCII strings that have the same SHA3_224TRUNk hash value for some k. Both of the strings should start with your OU 4x4 name (in capital letters). Your grade depends on how large k you can manage to reach. You are allowed to use any online implementations of the SHA3_224 hash function, as long as you specify the source.
+
+
+Best I can get on a 4 GB desktop is 11 hex which is 44 bits
+zhao0046lQCY
+zhao0046jAmU
+f9260b74d73
+f9260b74d73699e422835a8bfcb487f3714607324c1dcecbbb1cb0f1
+
+
