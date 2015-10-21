@@ -6,9 +6,14 @@ import sha3             #https://github.com/bjornedstrom/python-sha3
 dict = {}
 
 #ascii_all = "abcd"
-ascii_all = ascii_letters + digits
+#ascii_all = ascii_uppercase
+#ascii_all = ascii_lowercase
+#ascii_all = ascii_letters + digits
+#ascii_all = digits
+ascii_all = ascii_uppercase[:14]
+
 found = False
-nchar = 11
+nchar = 14
 for i in range(len(ascii_all)):	
 	if found:
 		break
@@ -17,7 +22,7 @@ for i in range(len(ascii_all)):
 	permut = list(map("".join, permut))
 	print("Number of permutations: " + str(len(permut)))
 	for x in permut:
-		in_str = "zhao0046"
+		in_str = "ZHAO0046"
 		in_str = in_str + x
 		m = sha3.SHA3224()
 		m.update(in_str)
@@ -32,7 +37,7 @@ for i in range(len(ascii_all)):
 			found = True
 			break
 		dict[hex_hash] = in_str
-		in_str = "zhao0046"
+		in_str = "ZHAO0046"
 
 print("Finished")
 
