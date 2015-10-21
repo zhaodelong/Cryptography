@@ -6,11 +6,11 @@ import sha3             #https://github.com/bjornedstrom/python-sha3
 dict = {}
 
 #ascii_all = "abcd"
-#ascii_all = ascii_uppercase
+ascii_all = ascii_uppercase
 #ascii_all = ascii_lowercase
 #ascii_all = ascii_letters + digits
 #ascii_all = digits
-ascii_all = ascii_uppercase[:14]
+#ascii_all = ascii_uppercase[:14]
 
 found = False
 nchar = 14
